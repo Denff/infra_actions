@@ -37,9 +37,6 @@ jobs:
       runs-on: ubuntu-latest
       needs: tests
       steps:
-        - name: Build Docker image
-          run: |
-            sudo docker build -t dinisius/infra_actions .
         - name: Check out the repo
           uses: actions/checkout@v2 
         - name: Set up Docker Buildx
